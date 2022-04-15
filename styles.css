@@ -1,0 +1,48 @@
+body {
+  font-family: 'Bebas Neue', cursive;
+  margin: 0;
+}
+/* === Nav === */
+.main-name {
+  display: inline-block;
+  font-size: 64px;
+  margin: 0;
+}
+
+.nav-desktop-text {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.nav-desktop-projects,
+.nav-desktop-about {
+  position: fixed;
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.nav-desktop-projects {
+  top: 20%;
+}
+
+.nav-desktop-about {
+  bottom: 20%;
+}
+
+/* === Main Banner === */
+.banner-container {
+  position: absolute;
+  left: 0;
+  top: 10;
+  height: 92%;
+  width: 92%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+main img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
