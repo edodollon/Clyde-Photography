@@ -4,15 +4,20 @@ body {
 }
 /* === Nav === */
 .main-name {
+  position: absolute;
+}
+
+.main-name h1{
   display: inline-block;
   font-size: 64px;
   margin: 0;
 }
 
 .nav-desktop-text {
+  position: absolute;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin: 0;
 }
 
 .nav-desktop-projects,
@@ -20,6 +25,7 @@ body {
   position: fixed;
   right: 0;
   transform: rotate(-90deg);
+  width: 10%;
 }
 
 .nav-desktop-projects {
@@ -34,9 +40,9 @@ body {
 .banner-container {
   position: absolute;
   left: 0;
-  top: 10;
-  height: 92%;
-  width: 92%;
+  top: 7%;
+  height: 93%;
+  width: 93%;
   overflow: hidden;
   z-index: -1;
 }
