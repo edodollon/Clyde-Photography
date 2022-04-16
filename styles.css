@@ -1,5 +1,5 @@
 body {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   margin: 0;
 }
 /* === Nav === */
@@ -7,7 +7,7 @@ body {
   position: absolute;
 }
 
-.main-name h1{
+.main-name h1 {
   display: inline-block;
   font-size: 64px;
   margin: 0;
