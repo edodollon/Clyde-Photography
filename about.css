@@ -1,3 +1,6 @@
+a {
+  color: #000000;
+}
 /* === Layout === */
 body {
   margin: 0;
@@ -17,6 +20,7 @@ body {
 
 .info-section-container {
   text-align: right;
+  padding-right: 1rem;
   width: 55%;
 }
 
@@ -36,8 +40,9 @@ body {
 }
 
 .main-bio {
-  width: 50%;
   font-weight: 600;
+  margin-left: auto;
+  width: 50%;
 }
 
 .phone-number,
@@ -62,8 +67,4 @@ body {
 .instagram {
   left: 20%;
   bottom: 9rem;
-}
-
-.info-contact-container a {
-  color: #000000;
 }
