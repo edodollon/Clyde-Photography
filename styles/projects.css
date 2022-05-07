@@ -41,6 +41,7 @@ nav div {
 .film-container {
   display: flex;
   margin-bottom: 6rem;
+  opacity: 0;
 }
 
 .film-description div {
@@ -77,4 +78,34 @@ h2 {
   text-decoration: none;
   position: absolute;
   bottom: 0;
+}
+
+/* === Animations === */
+
+/* Fades in entire film-container div */
+.animateFadeIn {
+  animation: 2.5s ease 1s 1 fadeIn forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*  */
+.animateSlideIn1 {
+  animation: 1.7s ease 1.5s 1 slideRight forwards;
+}
+
+@keyframes slideRight {
+  from { left: -100; }
+  to { 
+    left: 100%;
+    transform: translateX(-100%);
+  }
 }
