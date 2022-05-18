@@ -1,0 +1,82 @@
+body {
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+}
+
+a {
+  color: #000000;
+}
+
+/* === === */
+.about-overlay {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.about-overlay .main-name {
+  font-family: "Bebas Neue", cursive;
+  font-size: 64px;
+  margin: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.info-image-container {
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.info-section-container {
+  position: relative;
+  margin-right: 1rem;
+  width: 55%;
+}
+
+/* === Styling Image === */
+.info-image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* === Styling Info === */
+.info-section-container .main-name {
+  display: inline-block;
+  font-family: "Bebas Neue", cursive;
+  font-size: 64px;
+  margin: 0;
+}
+
+.main-bio {
+  text-align: right;
+  font-weight: 600;
+  margin-left: auto;
+  margin-top: 5rem;
+  width: 50%;
+}
+
+.phone-number,
+.email,
+.instagram {
+  /* position: absolute; */
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+  font-size: 6rem;
+  white-space: nowrap;
+}
+
+.phone-number {
+  left: -100%;
+  bottom: 21rem;
+}
+.email {
+  left: -100%;
+  bottom: 15rem;
+}
+
+.instagram {
+  left: -100%;
+  bottom: 9rem;
+}
