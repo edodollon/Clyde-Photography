@@ -1,40 +1,21 @@
-// const aboutButton = document.querySelector(".abtBtn");
-// const landingOverlay = document.querySelector(".landing-overlay");
-// const aboutOverlay = document.querySelectorAll(
-//   ".about-overlay, .info-section-container, .info-image-container, .info-img, .main-bio, .main-name, .email, .instagram, .phone-number"
-// );
+// === DOM Elements === //
+const aboutOverlay = document.querySelector(".about-overlay");
+const mainName = document.querySelector(".main-name");
+const mainBio = document.querySelector(".main-bio");
+const clydeImage = document.querySelector(".info-img");
+const phone = document.querySelector(".phone-number");;
+const email = document.querySelector(".email");
+const insta = document.querySelector(".instagram");
 
-// aboutButton.onclick = function showAboutOverlay() {
-//   landingOverlay.classList.add("hidden");
+// === Functions === //
+function animateElements() {
+  mainName.classList.add("animateMainName");
+  mainBio.classList.add("animateFadeIn");
+  clydeImage.classList.add("animateFadeIn");
+  phone.classList.add("animateSlideIn1");
+  email.classList.add("animateSlideIn2");
+  insta.classList.add("animateSlideIn3");
+}
 
-//   aboutOverlay.forEach((element) => {
-//     element.classList.remove("hidden");
-
-//     if (element.classList.value === "about-overlay") {
-//       element.classList.add("maxHeight");
-//     }
-
-//     if (element.classList.value === "main-name") {
-//       element.classList.add("animateMainName");
-//     }
-
-//     if (element.classList.value === "phone-number") {
-//       element.classList.add("animateSlideIn1");
-//     }
-
-//     if (element.classList.value === "email") {
-//       element.classList.add("animateSlideIn2");
-//     }
-
-//     if (element.classList.value === "instagram") {
-//       element.classList.add("animateSlideIn3");
-//     }
-
-//     if (
-//       element.classList.value === "main-bio" ||
-//       element.classList.value === "info-img"
-//     ) {
-//       element.classList.add("animateFadeIn");
-//     }
-//   });
-// };
+// === Event Listeners === //
+window.addEventListener("load", animateElements);

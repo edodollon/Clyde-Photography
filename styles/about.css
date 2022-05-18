@@ -39,6 +39,7 @@ a {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  opacity: 0;
 }
 
 /* === Styling Info === */
@@ -55,12 +56,13 @@ a {
   margin-left: auto;
   margin-top: 5rem;
   width: 50%;
+  opacity: 0;
 }
 
 .phone-number,
 .email,
 .instagram {
-  /* position: absolute; */
+  position: absolute;
   font-family: "Bebas Neue", cursive;
   margin: 0;
   font-size: 6rem;
@@ -79,4 +81,54 @@ a {
 .instagram {
   left: -100%;
   bottom: 9rem;
+}
+
+/* ================== */
+/* === Animations === */
+/* ================== */
+
+.animateMainName {
+  animation: 1.5s ease 1s 1 slideRight forwards;
+}
+
+.animateSlideIn1 {
+  animation: 1.7s ease 1.5s 1 slideRightContact forwards;
+}
+
+.animateSlideIn2 {
+  animation: 1.7s ease 1.7s 1 slideRightContact forwards;
+}
+
+.animateSlideIn3 {
+  animation: 1.7s ease 1.9s 1 slideRightContact forwards;
+}
+
+.animateFadeIn {
+  animation: 2.5s ease 1s 1 fadeIn forwards;
+}
+
+@keyframes slideRight {
+  from { left: 0; }
+  to { 
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRightContact {
+  from { left: -100; }
+  to { 
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
