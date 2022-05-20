@@ -88,38 +88,82 @@ a {
 /* ================== */
 
 .animateMainName {
-  animation: 1.5s ease 1s 1 slideRight forwards;
+  animation: 1.5s ease 1s 1 slideRight both;
 }
 
 .animateSlideIn1 {
-  animation: 1.7s ease 1.5s 1 slideRightContact forwards;
+  animation: 1.7s ease 1.5s 1 slideRightContact both;
 }
 
 .animateSlideIn2 {
-  animation: 1.7s ease 1.7s 1 slideRightContact forwards;
+  animation: 1.7s ease 1.7s 1 slideRightContact both;
 }
 
 .animateSlideIn3 {
-  animation: 1.7s ease 1.9s 1 slideRightContact forwards;
+  animation: 1.7s ease 1.9s 1 slideRightContact both;
 }
 
 .animateFadeIn {
-  animation: 2.5s ease 1s 1 fadeIn forwards;
+  animation: 2.5s ease 1s 1 fadeIn both;
+}
+
+.animateMainName-1 {
+  animation: 1.5s ease 1s 1 slideRightReverse both;
+}
+
+.animateSlideIn1-1 {
+  animation: 1.7s ease 1.5s 1 slideRightContactReverse both;
+}
+
+.animateSlideIn2-1 {
+  animation: 1.7s ease 1.7s 1 slideRightContactReverse both;
+}
+
+.animateSlideIn3-1 {
+  animation: 1.7s ease 1.9s 1 slideRightContactReverse both;
+}
+
+.animateFadeIn-1 {
+  animation: 2.5s ease 1s 1 fadeInReverse both;
 }
 
 @keyframes slideRight {
-  from { left: 0; }
-  to { 
+  from {
+    left: 0;
+  }
+  to {
     left: 100%;
     transform: translateX(-100%);
   }
 }
 
-@keyframes slideRightContact {
-  from { left: -100; }
-  to { 
+@keyframes slideRightReverse {
+  from {
     left: 100%;
     transform: translateX(-100%);
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slideRightContact {
+  from {
+    left: -100;
+  }
+  to {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRightContactReverse {
+  from {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  to {
+    left: -100;
   }
 }
 
@@ -130,5 +174,15 @@ a {
 
   100% {
     opacity: 100%;
+  }
+}
+
+@keyframes fadeInReverse {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
