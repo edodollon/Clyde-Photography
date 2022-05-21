@@ -5,53 +5,68 @@ body {
 
 a {
   color: #000000;
-} 
+  text-decoration: none;
+}
 
 /* === Nav === */
 .main-name h1 {
   background-color: #fff;
-  font-size: 64px;
   margin: 0;
 }
 
-.nav-desktop-text {
-  position: absolute;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0;
-  transition: transform 1s ease-out;
+#mobile-nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-desktop-projects,
 .nav-desktop-about {
-  position: fixed;
-  right: 0;
-  transform: rotate(-90deg);
-  width: 10%;
+  font-size: 1.5rem;
 }
 
-.nav-desktop-projects {
-  top: 20%;
-}
+@media screen and (min-width: 1024px) {
+  .main-name h1 {
+    font-size: 64px;
+  }
 
-.nav-desktop-about {
-  bottom: 20%;
-}
+  .nav-desktop-text {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    transition: transform 1s ease-out;
+  }
 
-.projBtn:hover,
-.abtBtn:hover {
-  cursor: pointer;
-  transform: translateY(-10px);
-  font-size: 42px;
+  .nav-desktop-projects,
+  .nav-desktop-about {
+    position: fixed;
+    right: 0;
+    transform: rotate(-90deg);
+    width: 10%;
+  }
+
+  .nav-desktop-projects {
+    top: 20%;
+  }
+
+  .nav-desktop-about {
+    bottom: 20%;
+  }
+
+  .projBtn:hover,
+  .abtBtn:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    font-size: 42px;
+  }
 }
 
 /* === Main Banner === */
 .banner-container {
   position: absolute;
-  left: 0;
   top: 0;
-  height: 100%;
-  width: 93%;
+  height: 100vh;
   overflow: hidden;
   z-index: -1;
 }
@@ -60,4 +75,18 @@ main img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-container {
+    left: 0;
+    height: 100%;
+    width: 93%;
+  }
+
+  main img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
