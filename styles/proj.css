@@ -8,6 +8,10 @@ body {
 }
 
 /* === Layout === */
+nav {
+  position: absolute;
+}
+
 main {
   display: flex;
 }
@@ -34,6 +38,11 @@ img {
 }
 
 /* === Links styling === */
+nav h1 {
+  margin: 0;
+  font-size: 64px;
+}
+
 a {
   color: #000000;
   display: inline-block;
