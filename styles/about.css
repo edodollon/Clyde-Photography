@@ -10,7 +10,6 @@ a {
 /* === Layout === */
 .info-section-container {
   position: relative;
-  padding: 0 1rem 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -67,6 +66,10 @@ a {
   justify-content: space-around;
 }
 
+.main-bio {
+  padding: 0 1.5rem;
+}
+
 @media screen and (min-width: 1024px) {
   .info-section-container .main-name {
     font-size: 64px;
@@ -79,6 +82,7 @@ a {
     font-weight: 600;
     margin-left: auto;
     margin-top: 5rem;
+    padding: 0;
     width: 50%;
     opacity: 0;
   }
