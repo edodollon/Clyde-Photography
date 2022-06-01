@@ -48,7 +48,7 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 70%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -72,7 +72,7 @@ a {
 }
 
 .info-contact-container {
-  bottom: 5%;
+  bottom: 10%;
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
