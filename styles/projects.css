@@ -17,7 +17,7 @@ nav {
   left: 0;
 }
 
-.about-btn {
+/* .about-btn {
   right: 1rem;
 }
 
@@ -29,7 +29,7 @@ nav {
   color: #000000;
   font-size: 36px;
   text-decoration: none;
-}
+} */
 
 nav div {
   display: inline-block;

@@ -22,7 +22,7 @@ nav {
   left: 0;
 }
 
-.about-btn {
+/* .about-btn {
   right: 1rem;
 }
 
@@ -34,7 +34,7 @@ nav {
   color: #000000;
   font-size: 36px;
   text-decoration: none;
-}
+} */
 
 nav div {
   display: inline-block;
@@ -45,8 +45,19 @@ nav div {
 /* === Layout === */
 .album-container {
   display: grid;
-  grid-gap: 0.5rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.6rem;
+  padding: 0 4.5vw;
+}
+
+.album-info {
+  grid-row: 1 / 2;
+}
+
+@media screen and (min-width: 1024px) {
+  .album-container {
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .photo-container img {
