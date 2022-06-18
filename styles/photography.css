@@ -1,5 +1,5 @@
 body {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", monospace;
   margin: 0;
 }
 
@@ -15,11 +15,24 @@ nav {
   width: 100%;
 }
 
-.page-title {
-  font-size: 64px;
-  font-weight: 900;
+.back-btn {
+  font-size: 10vw;
+  margin: 0;
   top: 0;
   left: 0;
+}
+
+.back-btn a,
+.previous-album,
+.next-album {
+  color: #000000;
+  text-decoration: none;
+}
+
+.back-btn a:hover,
+.previous-album:hover,
+.next-album:hover {
+  text-decoration: underline;
 }
 
 /* .about-btn {
@@ -51,6 +64,26 @@ nav div {
 
 .album-info {
   grid-row: 1 / 2;
+  font-family: monospace;
+  position: relative;
+}
+
+.album-info > h1 {
+  font-family: "Bebas Neue", monospace;
+}
+
+.album-info a {
+  position: absolute;
+  bottom: 0;
+}
+
+.next-album {
+  font-family: "Bebas Neue", monospace;
+  right: 0;
+}
+
+.previous-album {
+  font-family: "Bebas Neue", monospace;
 }
 
 @media screen and (min-width: 1024px) {
