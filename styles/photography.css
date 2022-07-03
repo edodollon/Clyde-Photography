@@ -16,7 +16,7 @@ nav {
 }
 
 .back-btn {
-  font-size: 10vw;
+  font-size: 18px;
   margin: 0;
   top: 0;
   left: 0;
@@ -27,6 +27,7 @@ nav {
 .next-album {
   color: #000000;
   text-decoration: none;
+  font-size: 5vw;
 }
 
 .back-btn a:hover,
@@ -65,11 +66,15 @@ nav div {
 .album-info {
   grid-row: 1 / 2;
   font-family: monospace;
+  font-size: 1rem;
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .album-info > h1 {
   font-family: "Bebas Neue", monospace;
+  font-size: 13vw;
+  margin: 0;
 }
 
 .album-info a {
@@ -86,10 +91,26 @@ nav div {
   font-family: "Bebas Neue", monospace;
 }
 
+@media screen and (min-width: 768px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .album-container {
     grid-gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .album-info > h1 {
+    font-size: 5vw;
+  }
+
+  .back-btn a,
+  .previous-album,
+  .next-album {
+    font-size: 2.5vw;
   }
 }
 
