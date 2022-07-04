@@ -16,13 +16,18 @@ nav {
 }
 
 .back-btn {
-  font-size: 18px;
   margin: 0;
   top: 0;
   left: 0;
 }
 
-.back-btn a,
+.back-btn a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 10vw;
+  font-weight: bold;
+}
+
 .previous-album,
 .next-album {
   color: #000000;
@@ -95,6 +100,10 @@ nav div {
   .album-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .back-btn a {
+    font-size: 7vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -107,10 +116,13 @@ nav div {
     font-size: 5vw;
   }
 
-  .back-btn a,
   .previous-album,
   .next-album {
     font-size: 2.5vw;
+  }
+
+  .back-btn a {
+    font-size: 64px;
   }
 }
 
