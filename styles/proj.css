@@ -87,9 +87,44 @@ nav h1 {
   margin: 0;
 }
 
+
+@media screen and (min-width: 360px) {
+  a {
+    font-size: 12vw;
+  }
+}
+
+@media screen and (min-width: 445px) {
+  a {
+    font-size: 10.5vw;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  a {
+    font-size: 8.5vw;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  a {
+    font-size: 7.5vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   nav h1 {
     font-size: 7vw;
+  }
+
+  a {
+    font-size: 6.5vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  a {
+    font-size: 5.5vw;
   }
 }
 
