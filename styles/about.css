@@ -48,7 +48,7 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: 55%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -80,7 +80,12 @@ a {
   width: 100%;
 }
 
+.info-section-container > a {
+  display: block;
+}
+
 .main-bio {
+  font-family: monospace;
   padding: 0 1.5rem;
 }
 
@@ -89,7 +94,7 @@ a {
     background-color: #fff;
     color: #000000;
   }
-  
+
   a {
     color: #000000;
   }
@@ -105,8 +110,8 @@ a {
   }
 
   .main-bio {
+    font-size: 1rem;
     text-align: right;
-    font-weight: 600;
     margin-left: auto;
     margin-top: 5rem;
     padding: 0;
@@ -193,8 +198,18 @@ a {
     left: 0;
   }
   to {
-    /* left: 50%; */
     transform: translateX(50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @keyframes slideRight {
+    from {
+      left: 0;
+    }
+    to {
+      transform: translateX(165%);
+    }
   }
 }
 
